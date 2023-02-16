@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo de notas</title>
+    <script defer src="./index.js"></script>
+</head>
+
+<style>
+    /* Estilos para el formulario */
+    .form {
+      display: flex;
+      margin: 0 auto;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 30px;
+      margin-bottom: 40px;
+    }
+    
+    input {
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      background-color: #f0f8ff;
+      padding: 10px;
+      margin-bottom: 20px;
+      width: 300px;
+      font-size: 16px;
+    }
+    
+    .btn {
+      background-color: #2d9cdb;
+      border-radius: 8px;
+      color: white;
+      border: none;
+      height: 40px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    
+    button:hover {
+      background-color: #1e88e5;
+    }
+    
+    /* Estilos para los resultados */
+    h2 {
+      margin-top: 50px;
+      font-size: 24px;
+      text-align: center;
+    }
+    
+    p {
+      margin-bottom: 10px;
+      font-size: 18px;
+      text-align: center;
+    }
+    
+    #respuestaMate, #respuestaFis, #respuestaProg, #matematicasRes, #fisicaRes, #programacionRes {
+      font-weight: bold;
+    }
+    
+    #aproboTodas, #aproboDos, #aproboUna, #maxMat, #maxFis, #maxProg {
+      font-weight: bold;
+      margin-top: 30px;
+    }
+    
+    </style>
+
+<body>
+    <form class="form" id='form'>
+        <input type="text" name="" id="cedula" placeholder="Cedula">
+        <br>
+        <input type="text" name="" id="nombre" placeholder="Nombre del Alumno">
+        <br>
+        <input type="number" name="" id="matematica" placeholder="Nota de Matematica" required>
+        <br>
+        <input type="number" name="" id="fisica" placeholder="Nota de Fisica" required>
+        <br>
+        <input type="number" name="" id="programacion" placeholder="Nota de Programacion" required>
+        <button id="btn" class="btn" onclick="guardarDatos()">Guardar</button>
+    </form>
+
+    <h2>Resultados</h2>
+        <p id="respuestaMate"></p>
+        <p id="respuestaFis"></p>
+        <p id="respuestaProg"></p>
+        <p id="aprobadosMate"></p>
+        <p id="reprobadosMate"></p>
+        <p id="aprobadosFisica"></p>
+        <p id="reprobadosFisica"></p>
+        <p id="aprobadosProg"></p>
+        <p id="reprobadosProg"></p>
+        <p id="aproboTodas"></p>
+        <p id="aproboDos"></p>
+        <p id="aproboUna"></p>
+        <p id="maxMat"></p>
+        <p id="maxFis"></p>
+        <p id="maxProg"></p>
+</body>
+</html>
